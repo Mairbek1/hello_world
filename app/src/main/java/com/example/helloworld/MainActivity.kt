@@ -24,5 +24,6 @@ class MainActivity : Activity() {
             helloGraz.setTextColor(color)
         }
     }
-
 }
+
+
