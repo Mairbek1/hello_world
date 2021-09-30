@@ -23,20 +23,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_graz"
+        android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.603" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/changeColorButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="green"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="514dp" />
+        android:layout_marginTop="20dp"
+        android:text="@string/change_color"
+        app:layout_constraintLeft_toLeftOf="@id/textView"
+        app:layout_constraintRight_toRightOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeSizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="@string/change_size"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintLeft_toLeftOf="@id/textView"
+        app:layout_constraintRight_toRightOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
